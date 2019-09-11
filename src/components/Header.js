@@ -14,10 +14,10 @@ const Header = props => {
 };
 
 const mapStateToProps = state => {
-  // console.log('header', state)
+  // console.log(state, 'state');
   return {
-    car: state.car
-  }
-}
+car: state.car,
 
-export default connect(mapStateToProps, {})(Header);
+  };
+}
+export default connect(mapStateToProps,{})(Header);
